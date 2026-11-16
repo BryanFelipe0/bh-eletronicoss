@@ -93,7 +93,7 @@ export const homeContent = {
     title: 'Venha nos visitar.',
     text: 'Atendimento presencial para conhecer os produtos e deixar seu aparelho para avaliação.',
     image: {
-      src: '/images/loja/fachada.jpg',
+      src: `${import.meta.env.BASE_URL}images/loja/fachada.jpg`,
       alt: 'Fachada vermelha da loja BH Eletrônicos na Rua Minas Gerais',
       ratio: '3 / 4',
     } satisfies ImageRef,

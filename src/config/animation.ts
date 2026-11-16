@@ -63,7 +63,7 @@ export const breakpoints = {
 
 export const modelConfig = {
   /** Caminho do arquivo GLB dentro de /public */
-  path: '/models/smartphone-fold.glb',
+  path: `${import.meta.env.BASE_URL}models/smartphone-fold.glb`,
   /** Nome da animação interna do GLB usada para abrir/fechar */
   animationName: 'open-close',
   /**

@@ -21,7 +21,7 @@ export const assistenciaContent = {
     text: 'Assistência técnica para smartphones na loja física da BH Eletrônicos, com bancada própria. O primeiro passo é uma avaliação do aparelho.',
     ctas: [{ label: 'Ver o processo', action: { type: 'route', to: '/assistencia#processo' }, variant: 'ghost' }] satisfies Cta[],
     image: {
-      src: '/images/assistencia/bancada.jpg',
+      src: `${import.meta.env.BASE_URL}images/assistencia/bancada.jpg`,
       alt: 'Técnico da BH Eletrônicos trabalhando em um smartphone na bancada de assistência',
       ratio: '3 / 4',
     } satisfies ImageRef,
@@ -32,7 +32,7 @@ export const assistenciaContent = {
     title: 'Diagnóstico antes de qualquer serviço.',
     text: 'Cada aparelho é avaliado individualmente. Depois da avaliação, você recebe as informações sobre o que foi identificado para decidir os próximos passos.',
     image: {
-      src: '/images/assistencia/bancada-reparo.jpg',
+      src: `${import.meta.env.BASE_URL}images/assistencia/bancada-reparo.jpg`,
       alt: 'Dois smartphones com o vidro traseiro quebrado na bancada de reparo',
       ratio: '4 / 3',
     } satisfies ImageRef,
@@ -49,11 +49,12 @@ export const assistenciaContent = {
     /** Proporção das duas fotos (precisam ter o mesmo tamanho) */
     ratio: '635 / 870',
     before: {
-      src: '/images/assistencia/antes.jpg',
+      src: `${import.meta.env.BASE_URL}images/assistencia/antes.jpg`,
       alt: 'Antes: smartphone com a tela totalmente trincada',
     } satisfies ImageRef,
-    after: {
-      src: '/images/assistencia/depois.jpg',
+    after: { 
+src: `${import.meta.env.BASE_URL}images/assistencia/depois.jpg`,
+
       alt: 'Depois: o mesmo smartphone com a tela nova, sem trincas',
     } satisfies ImageRef,
   },
