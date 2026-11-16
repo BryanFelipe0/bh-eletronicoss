@@ -1,4 +1,4 @@
-﻿name: Publicar BH Eletronicos
+name: Publicar BH Eletronicos
 
 on:
   push:
@@ -32,6 +32,9 @@ jobs:
 
       - name: Compilar site
         run: npm run build
+
+      - name: Configurar rotas do React
+        run: cp dist/index.html dist/404.html
 
       - name: Preparar GitHub Pages
         uses: actions/configure-pages@v5
