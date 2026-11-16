@@ -2,7 +2,7 @@ import { lazy } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Layout } from './components/layout/Layout';
 
-// Cada página é carregada sob demanda (lazy loading)
+// Cada pÃ¡gina Ã© carregada sob demanda (lazy loading)
 const Home = lazy(() => import('./pages/Home'));
 const Produtos = lazy(() => import('./pages/Produtos'));
 const Assistencia = lazy(() => import('./pages/Assistencia'));
@@ -12,7 +12,7 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
