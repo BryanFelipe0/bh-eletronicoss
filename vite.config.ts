@@ -1,15 +1,16 @@
-import { defineConfig } from 'vite';
+﻿import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  // Permite abrir a prévia por um link temporário do Cloudflare (teste no celular)
+  base: '/bh-eletronicoss/',
+  // Permite abrir a prÃ©via por um link temporÃ¡rio do Cloudflare (teste no celular)
   preview: {
     port: 4173,
     allowedHosts: ['.trycloudflare.com'],
   },
   build: {
-    // O pacote 3D (Three.js + React Three Fiber) é grande, mas só é baixado na Home
+    // O pacote 3D (Three.js + React Three Fiber) Ã© grande, mas sÃ³ Ã© baixado na Home
     chunkSizeWarningLimit: 1200,
     rollupOptions: {
       output: {
@@ -22,3 +23,4 @@ export default defineConfig({
     },
   },
 });
+
