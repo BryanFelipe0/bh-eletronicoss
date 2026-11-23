@@ -2,7 +2,7 @@ import { lazy } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Layout } from './components/layout/Layout';
 
-// Cada pÃ¡gina Ã© carregada sob demanda (lazy loading)
+// Cada página é carregada sob demanda (lazy loading)
 const Home = lazy(() => import('./pages/Home'));
 const Produtos = lazy(() => import('./pages/Produtos'));
 const Assistencia = lazy(() => import('./pages/Assistencia'));

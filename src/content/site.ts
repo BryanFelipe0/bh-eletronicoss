@@ -16,7 +16,7 @@ export const site = {
   tagline: 'Acessórios, eletrônicos e assistência técnica para smartphones.',
 
   /** Domínio do site depois de publicado (ex.: 'https://www.bheletronicos.com.br'). Usado em SEO. */
-  url: '',
+  url: 'https://bheletronicos.com.br',
 
   /** Imagem de compartilhamento em redes sociais (1200×630) em /public/images/og/ */
   shareImage: '',
